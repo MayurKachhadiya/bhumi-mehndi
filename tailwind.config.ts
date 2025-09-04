@@ -58,6 +58,14 @@ export default {
 					medium: 'hsl(var(--henna-medium))',
 					light: 'hsl(var(--henna-light))',
 					cream: 'hsl(var(--henna-cream))'
+				},
+				gold: {
+					rich: 'hsl(var(--gold-rich))',
+					light: 'hsl(var(--gold-light))'
+				},
+				maroon: {
+					deep: 'hsl(var(--maroon-deep))',
+					light: 'hsl(var(--maroon-light))'
 				}
 			},
 			fontFamily: {
@@ -71,25 +79,63 @@ export default {
 			},
 			keyframes: {
 				'accordion-down': {
-					from: {
-						height: '0'
-					},
-					to: {
-						height: 'var(--radix-accordion-content-height)'
-					}
+					from: { height: '0' },
+					to: { height: 'var(--radix-accordion-content-height)' }
 				},
 				'accordion-up': {
-					from: {
-						height: 'var(--radix-accordion-content-height)'
+					from: { height: 'var(--radix-accordion-content-height)' },
+					to: { height: '0' }
+				},
+				'fade-in-up': {
+					'0%': {
+						opacity: '0',
+						transform: 'translateY(50px)'
 					},
-					to: {
-						height: '0'
+					'100%': {
+						opacity: '1',
+						transform: 'translateY(0)'
+					}
+				},
+				'scale-in': {
+					'0%': {
+						opacity: '0',
+						transform: 'scale(0.8)'
+					},
+					'100%': {
+						opacity: '1',
+						transform: 'scale(1)'
+					}
+				},
+				'slide-in-right': {
+					'0%': { transform: 'translateX(100%)' },
+					'100%': { transform: 'translateX(0)' }
+				},
+				'float': {
+					'0%, 100%': { transform: 'translateY(0px)' },
+					'50%': { transform: 'translateY(-20px)' }
+				},
+				'shimmer': {
+					'0%': { transform: 'translateX(-100%)' },
+					'100%': { transform: 'translateX(100%)' }
+				},
+				'pulse-glow': {
+					'0%, 100%': { 
+						boxShadow: '0 0 20px hsl(var(--gold-rich) / 0.4)' 
+					},
+					'50%': { 
+						boxShadow: '0 0 40px hsl(var(--gold-rich) / 0.8)' 
 					}
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in-up': 'fade-in-up 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards',
+				'scale-in': 'scale-in 0.8s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards',
+				'slide-in-right': 'slide-in-right 0.3s ease-out',
+				'float': 'float 6s ease-in-out infinite',
+				'shimmer': 'shimmer 0.8s ease-out',
+				'pulse-glow': 'pulse-glow 2s ease-in-out infinite'
 			}
 		}
 	},
