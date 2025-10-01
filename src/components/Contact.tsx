@@ -34,13 +34,13 @@ const Contact = () => {
     {
       icon: Phone,
       title: "Call Us",
-      info: "+1 (555) 123-4567",
+      info: "+91 6351102210",
       subinfo: "Available 9 AM - 8 PM"
     },
     {
       icon: Mail,
       title: "Email Us",
-      info: "hello@mehndibyartisan.com",
+      info: "mayurkachhadiya373@gmail.com",
       subinfo: "We reply within 24 hours"
     },
     {
@@ -98,14 +98,15 @@ const Contact = () => {
             <div className="pt-6">
               <h4 className="font-semibold text-foreground mb-4">Follow Us</h4>
               <div className="flex space-x-4">
-                <Button variant="elegant" size="icon">
-                  <Instagram className="w-5 h-5" />
+                <Button variant="elegant" size="icon" asChild>
+                  <a href="https://www.instagram.com/bhumi.mehndi_art" target="_blank" rel="noopener noreferrer">
+                    <Instagram className="w-5 h-5" />
+                  </a>
                 </Button>
-                <Button variant="elegant" size="icon">
-                  <Facebook className="w-5 h-5" />
-                </Button>
-                <Button variant="elegant" size="icon">
-                  <MessageCircle className="w-5 h-5" />
+                <Button variant="elegant" size="icon" asChild>
+                  <a href="https://wa.me/916351102210" target="_blank" rel="noopener noreferrer">
+                    <MessageCircle className="w-5 h-5" />
+                  </a>
                 </Button>
               </div>
             </div>
@@ -224,13 +225,17 @@ const Contact = () => {
               send us a message on WhatsApp. We're here to help!
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button variant="hero" size="lg">
-                <Phone className="w-5 h-5" />
-                Call Now: +1 (555) 123-4567
+              <Button variant="hero" size="lg" asChild>
+                <a href="tel:+916351102210">
+                  <Phone className="w-5 h-5" />
+                  Call Now: +91 6351102210
+                </a>
               </Button>
-              <Button variant="gold" size="lg">
-                <MessageCircle className="w-5 h-5" />
-                WhatsApp Chat
+              <Button variant="gold" size="lg" asChild>
+                <a href="https://wa.me/916351102210" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-5 h-5" />
+                  WhatsApp Chat
+                </a>
               </Button>
             </div>
           </div>

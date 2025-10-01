@@ -29,14 +29,15 @@ const Footer = () => {
               Traditional designs with contemporary elegance.
             </p>
             <div className="flex space-x-3">
-              <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/10">
-                <Instagram className="w-5 h-5" />
+              <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/10" asChild>
+                <a href="https://www.instagram.com/bhumi.mehndi_art" target="_blank" rel="noopener noreferrer">
+                  <Instagram className="w-5 h-5" />
+                </a>
               </Button>
-              <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/10">
-                <Facebook className="w-5 h-5" />
-              </Button>
-              <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/10">
-                <MessageCircle className="w-5 h-5" />
+              <Button variant="ghost" size="icon" className="text-primary-foreground hover:bg-primary-foreground/10" asChild>
+                <a href="https://wa.me/916351102210" target="_blank" rel="noopener noreferrer">
+                  <MessageCircle className="w-5 h-5" />
+                </a>
               </Button>
             </div>
           </div>
@@ -114,14 +115,14 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3">
                 <Phone className="w-4 h-4 text-primary-foreground/80 flex-shrink-0" />
-                <a href="tel:+1234567890" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  +1 (555) 123-4567
+                <a href="tel:+916351102210" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  +91 6351102210
                 </a>
               </div>
               <div className="flex items-center space-x-3">
                 <Mail className="w-4 h-4 text-primary-foreground/80 flex-shrink-0" />
-                <a href="mailto:hello@mehndibyartisan.com" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
-                  hello@mehndibyartisan.com
+                <a href="mailto:mayurkachhadiya373@gmail.com" className="text-sm text-primary-foreground/80 hover:text-primary-foreground transition-colors">
+                  mayurkachhadiya373@gmail.com
                 </a>
               </div>
             </div>
